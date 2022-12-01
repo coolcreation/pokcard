@@ -1,0 +1,54 @@
+/*    
+Jeff 11/30/2022
+*/
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    background-color: rgba(237, 247, 255, 0.747);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container{
+  display: flex;  
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+.resetButton{
+    padding: .1rem .2rem;
+    font-size: 1.2rem;
+    color: lime;
+    background-color: black;
+    border: 3px solid rgb(13, 139, 127);
+    border-radius: 7px;
+    cursor: pointer;
+}
+h1{
+    color: rgb(13, 139, 127)
+}
+
+
+
+
+@media only screen and (min-width: 992px){
+
+
+}

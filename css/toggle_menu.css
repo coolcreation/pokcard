@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+/*    Jeff 11/12/2022
+toggle_menu.css
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    font-family: 'DM Sans', sans-serif !important;
+    display: flex;
+    align-content: center !important;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 1rem;
+}
+.nav-brand img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+.navbar-list {
+    display: none;
+}
+.navbar-list.nodisplay {
+    display: none;
+}
+.navbar-list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    background-color: black;
+    width: 100%;
+    z-index: 22;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: .9rem 0;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.navbar-list li a {
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white !important;
+    margin: 0 0 0 1rem;
+}
+
+.toggle-button {
+    font-family: 'DM Sans', sans-serif !important;
+    position: absolute;
+    right: 1rem;
+    top: .95rem;
+    display: flex;
+    padding: 0 .4rem !important;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid lime;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.navbar a{
+    text-decoration: none;
+}
+
+a{
+    padding: .2rem 0 !important;
+}
+a.active{
+    border-bottom: 3px solid lime;
+}
+
+/* Footer */
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    color: turquoise;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+
+@media only screen and (min-width: 930px) {
+
+    .toggle-button {
+        display: none;
+    }
+    .toggle-button.display {
+        display: flex;
+        background-color: aqua;
+    }
+    .navbar-list {
+        font-family: 'DM Sans', sans-serif !important;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 35px;
+        margin-right: 2rem;
+    }
+    .navbar-list li a{
+        font-family: 'DM Sans', sans-serif !important;
+    }
+    ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: .4rem 0;
+        border-bottom: none;
+        width: inherit;
+    }
+    .navbar-list li a {
+        margin: 0;
+    }
+    a{
+        padding: .82rem 0 !important;
+    }
+    a.active{
+        border-bottom: 3px solid lime;
+    }
+}
